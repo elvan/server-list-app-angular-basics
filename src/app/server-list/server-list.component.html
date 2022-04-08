@@ -18,7 +18,7 @@
 </button>
 
 <p>Allow new server: {{ allowNewServer }}</p>
-<p>Status: {{ serverCreationStatus }}</p>
+<p *ngIf="serverCreated">Status: {{ serverCreationStatus }}</p>
 
 <hr />
 
