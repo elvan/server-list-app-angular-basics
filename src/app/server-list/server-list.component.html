@@ -28,4 +28,9 @@
 
 <hr />
 
-<app-server-item *ngFor="let item of servers"></app-server-item>
+<ul>
+  <li *ngFor="let item of servers; let i = index">
+    <p>#{{ i }}</p>
+    <app-server-item></app-server-item>
+  </li>
+</ul>
