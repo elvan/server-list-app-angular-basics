@@ -28,14 +28,4 @@
 
 <hr />
 
-<ul>
-  <li>
-    <app-server-item></app-server-item>
-  </li>
-  <li>
-    <app-server-item></app-server-item>
-  </li>
-  <li>
-    <app-server-item></app-server-item>
-  </li>
-</ul>
+<app-server-item *ngFor="let item of servers"></app-server-item>
